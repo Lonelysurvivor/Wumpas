@@ -106,6 +106,53 @@ public class Maze extends CaveContents
 public enum CaveContents {
     EMPTY, WUMPUS, BATS, PIT
 }
+
+
+import java.util.*;
+public class Cave extends java.lang.Object
+{
+    String name;
+    int num,adj1,adj2,adj3;
+ public Cave(java.lang.String name, int num, int adj1, int adj2, int adj3)
+{ 
+    this.name= name;
+    this.num=num;
+    this.adj1=adj1;
+    this.adj2=adj2;
+    this.adj3=adj3;
+    
+  
+}
+public int getAdjNumber(int tunnel)
+{
+ return adj1;
+  
+    
+}
+public int getAdjNumber2(int tunnel)
+{ 
+    return adj2;
+}
+public int getAdjNumber3(int tunnel)
+{
+    return adj3;
+}
+public java.lang.String getCaveName()
+{
+     return name;
+    
+}
+public int getCaveNumber()
+{
+    return num;
+}
+public boolean hasBeenVisited()
+{return true;}
+public void markAsVisited()
+{}
+public void setContents(CaveContents contents)
+{}
+ }
   
       
   
