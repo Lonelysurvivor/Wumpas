@@ -147,11 +147,30 @@ public int getCaveNumber()
     return num;
 }
 public boolean hasBeenVisited()
-{return true;}
+    {
+        if(hasBeenVisited())
+        
+        {
+            return true;
+        }
+            else
+            {return false;
+            }
+        }
 public void markAsVisited()
-{}
+{
+ if(hasBeenVisted()==true)
+ {
+    markAsVisited()=true;
+    }
+    else
+    {markAsVisited()=false;
+    }
+}
 public void setContents(CaveContents contents)
-{}
+{
+    cave(CaveContents.EMPTY, CaveContents.WUMPUS, CaveContents.BATS, CaveContents.PIT);
+}
  }
   
       
